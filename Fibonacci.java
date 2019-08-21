@@ -1,6 +1,6 @@
-import java.util.Scanner;
-public class Fibonacci {
-    public static void main(String[] args) {
+import java.util.Scanner;  
+public class Fibonacci{ 
+	public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
 
         int a = 1, b = 0, c, i = 1, n;
