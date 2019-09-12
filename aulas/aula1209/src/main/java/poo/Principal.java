@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class Principal {
     public static void main(String[] args) {
         Teclado entrada = new Teclado();
-        entrada.lerNumero();
+        //entrada.lerNumero();
+        System.out.println(entrada.divisaoNumeros(5,2));
 //        int [] vetor = new int[10];
 //        int posicao;
 //      try{
