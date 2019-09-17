@@ -20,7 +20,10 @@ public class Teclado {
         }
         return retorno;
     }
-    public double divisaoNumeros(int a, int b) throws ArithmeticException{
+    public double divisaoNumeros(int a, int b) {//throws ArithmeticException{
+        if(b == 0){
+            throw new ArithmeticException();
+        }
         return (double) a / b;
     }
 }
