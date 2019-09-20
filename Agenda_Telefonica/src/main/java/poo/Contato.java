@@ -23,7 +23,7 @@ public class Contato {
         this.emails = new Email();
     }
     public boolean addTelefone(String r, String n){
-        return this.telefones.add(r, n); 
+        return this.telefones.add(r, n);
 
     }
 
@@ -33,8 +33,8 @@ public class Contato {
     }
 
     public boolean removeTelefone(String r){
-      //  return this.telefones.remover(r);        remover da HashMap
-        return true;// so para compilar
+       return this.telefones.remover(r);
+
     }
 
     public boolean removeEmail(String r){
@@ -43,8 +43,8 @@ public class Contato {
     }
 
     public boolean updateTelefone(String r, String n){
-        //return this.telefones.update(r, n); igual
-        return true; // so para compilar
+        return this.telefones.update(r, n); 
+
     }
 
     public boolean updateEmail(String r, String e){ //Igual anteriores
