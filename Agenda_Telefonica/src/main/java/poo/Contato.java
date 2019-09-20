@@ -23,8 +23,8 @@ public class Contato {
         this.emails = new Email();
     }
     public boolean addTelefone(String r, String n){
-        //return this.telefones.add(r, n); criar método add() na classe Telefone e tratar erros la
-        return true; // so para compilar
+        return this.telefones.add(r, n); 
+
     }
 
     public boolean addEmail(String r, String e){
