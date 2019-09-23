@@ -8,13 +8,13 @@ public class Email {
     private final String emailExpressaoRegular = "^[\\w-\\+]+(\\.[\\w]+)*@[\\w-]+(\\.[\\w]+)*(\\.[a-z]{2,})$";
     // Metodos
 
-//    private boolean validacaoEmail(String email){
-//
-//        return email.matches(emailExpressaoRegular);
-//    }
+    private boolean validaEmail(String email){
+
+        return email.matches(emailExpressaoRegular);
+    }
 
     public Email(){
-        dados = new HashMap<>();   //  Construtor define Email como uma HashMap
+        dados = new HashMap<>();
     }
 
     public boolean add(String r, String e){
@@ -34,10 +34,13 @@ public class Email {
     }
 
     public boolean update(String r, String e){
+        if(!this.validaEmail(e)){
+            return false;
+        }
         if(!this.dados.containsKey(r)){
             return false;
         }
-        this.dados.put(r, e);   //Atualizar dado
+        this.dados.put(r, e);
         return true;
     }
 

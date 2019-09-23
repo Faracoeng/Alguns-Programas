@@ -39,10 +39,12 @@ public class Telefone {
         return true;
     }
     public boolean update(String r, String n){
-        return true; //so para compilar
+        if(!this.dados.containsKey(r)) { //validação
+            return false;
+        }
+        dados.put(r, n); //atualizar dado
+        return true;
     }
-
-
 
     @Override
     public String toString() {
