@@ -19,8 +19,12 @@ public class Email {
 
     public boolean add(String r, String e){
 
-        if(!e.matches(emailExpressaoRegular)) return false;   //se e-mail nao for válido
-        if(dados.containsKey(r)) return false; //  Se conter a chave "r"
+        if(!this.validaEmail(e)){   //validação
+            return false;
+        }
+        if(dados.containsKey(r)){ //verifica se contem chave 'r'
+            return false;
+        }
         dados.put(r, e); // então e-mail é adicionado
         return true;
     }
