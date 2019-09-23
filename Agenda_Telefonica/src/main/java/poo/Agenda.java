@@ -35,9 +35,15 @@ public class Agenda {
     public boolean updateTelefone(String r, String n, int pIndex){
         return contatos.get(pIndex).updateTelefone(r, n);
     }
+    public boolean updateEmail(String r, String e, int pIndex){
+        return contatos.get(pIndex).updateEmail(r, e);
+    }
 
     public boolean removeTelefone(String r, int pIndex){
         return contatos.get(pIndex).removeTelefone(r);
 
+    }
+    public boolean removeEmail(String r, int pIndex){
+        return contatos.get(pIndex).removeEmail(r);
     }
 }
