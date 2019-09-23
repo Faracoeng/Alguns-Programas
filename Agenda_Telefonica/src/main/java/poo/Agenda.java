@@ -24,8 +24,20 @@ public class Agenda {
 //        return false;
 //    }
 
+
     //usar Try/Catch para verificar posições
     public boolean addEmail(String r, String e, int pIndex){
         return contatos.get(pIndex).addEmail(r, e);
+    }
+
+    //public boolean addTelefone(String r, String n, int pIndex){}          //implementar
+
+    public boolean updateTelefone(String r, String n, int pIndex){
+        return contatos.get(pIndex).updateTelefone(r, n);
+    }
+
+    public boolean removeTelefone(String r, int pIndex){
+        return contatos.get(pIndex).removeTelefone(r);
+
     }
 }
