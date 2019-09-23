@@ -28,8 +28,8 @@ public class Contato {
     }
 
     public boolean addEmail(String r, String e){
-       // return this.emails.add(r, e);                // Mesmo esquema de Telefone()
-        return true;// so para compilar
+        return this.emails.add(r, e);                // Mesmo esquema de Telefone()
+
     }
 
     public boolean removeTelefone(String r){
@@ -38,8 +38,8 @@ public class Contato {
     }
 
     public boolean removeEmail(String r){
-        //return this.emails.remove(r); igual
-        return true; // so para compilar
+        return this.emails.remove(r);
+
     }
 
     public boolean updateTelefone(String r, String n){
@@ -49,8 +49,8 @@ public class Contato {
 
     public boolean updateEmail(String r, String e){ //Igual anteriores
 
-        //return this.emails.update(r, e); igual
-        return true; // so para compilar
+        return this.emails.update(r, e);
+
     }
 
     @Override

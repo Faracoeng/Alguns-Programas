@@ -33,20 +33,16 @@ public class Telefone {
 
     public boolean remover(String r){
         if(!dados.containsKey(r)){
-            return false; //Verifica se existe chave na HashMap
+            return false;       // Verifica se existe chave na HashMap
         }
         dados.remove(r);
         return true;
     }
-
-    public boolean update(String r, String n){  // Atualiza algum dados
-
-        if(!this.dados.containsKey(r)) {
-            return false;
-        }
-        dados.put(r, n); //atualizar dado
-        return true;
+    public boolean update(String r, String n){
+        return true; //so para compilar
     }
+
+
 
     @Override
     public String toString() {
