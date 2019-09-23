@@ -14,4 +14,18 @@ public class Agenda {
         this.contatos.add(p);
     }
 
+//    public boolean removePessoa(String n, String s){
+//        for (Contato e : contatos) {
+//            if(e.toString() == n + s){                  // COMPARA RETORNO DO METODO toString(), verificar depois
+//                contatos.remove(contatos.indexOf(e));   // Se iguais, remove pessoa associada ao indice atual
+//                return true;
+//            }
+//        }
+//        return false;
+//    }
+
+    //usar Try/Catch para verificar posições
+    public boolean addEmail(String r, String e, int pIndex){
+        return contatos.get(pIndex).addEmail(r, e);
+    }
 }
