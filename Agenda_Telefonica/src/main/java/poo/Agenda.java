@@ -29,7 +29,6 @@ public class Agenda {
     public boolean addEmail(String r, String e, int pIndex){
         return contatos.get(pIndex).addEmail(r, e);
     }
-
     //public boolean addTelefone(String r, String n, int pIndex){}          //implementar
 
     public boolean updateTelefone(String r, String n, int pIndex){
@@ -38,10 +37,8 @@ public class Agenda {
     public boolean updateEmail(String r, String e, int pIndex){
         return contatos.get(pIndex).updateEmail(r, e);
     }
-
     public boolean removeTelefone(String r, int pIndex){
         return contatos.get(pIndex).removeTelefone(r);
-
     }
     public boolean removeEmail(String r, int pIndex){
         return contatos.get(pIndex).removeEmail(r);
