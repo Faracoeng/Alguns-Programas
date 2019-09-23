@@ -22,6 +22,7 @@ public class Contato {
         this.telefones = new Telefone();
         this.emails = new Email();
     }
+
     public boolean addTelefone(String r, String n){
         return this.telefones.add(r, n);
 
