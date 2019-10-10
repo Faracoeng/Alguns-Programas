@@ -10,6 +10,9 @@ public class SemFio extends Telefone {
         this.distancia = distancia;
         this.canais = canais;
     }
+    public void ruidoBranco(){
+        System.out.println("Todas as frequencias");
+    }
 
     @Override
     public String olaMundo() {
