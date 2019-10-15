@@ -10,4 +10,9 @@ public class Cavaleiro extends Personagem {
     public void atacar(double intensidade) {
 
     }
+
+    @Override
+    public void mover() {
+        System.out.println("Movendo 10 unidades");
+    }
 }

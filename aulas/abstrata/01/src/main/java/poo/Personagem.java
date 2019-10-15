@@ -22,5 +22,6 @@ public abstract class Personagem {
     }
 
     public abstract void atacar(double intensidade);
+    public abstract void mover();
 
 }
