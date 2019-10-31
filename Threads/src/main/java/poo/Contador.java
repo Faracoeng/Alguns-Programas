@@ -7,6 +7,10 @@ public class Contador {
         this.valorAtual += 1;
     }
 
+    public void incrementar(int valor){
+        this.valorAtual += valor;
+    }
+
     public int getValorAtual() {
         return valorAtual;
     }
