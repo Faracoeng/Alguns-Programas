@@ -5,7 +5,5 @@ public class Fluxo02 implements Runnable {
         for(int i=0; i < 10 ; i++){
             System.err.println("Fazendo uso de interface");
         }
-//        notifyAll();
-//        System.err.println("....outra mensagem qualquer....");
     }
 }

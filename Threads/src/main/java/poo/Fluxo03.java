@@ -4,10 +4,7 @@ public class Fluxo03 extends Thread {
 
     public Fluxo03(String nome){
         super(nome);
-
     }
-
-
 
     public void run(){
         try{
